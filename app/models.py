@@ -123,4 +123,4 @@ class Set(Base):
     submatch = relationship("SubMatch", back_populates="sets")
 
     submitted_by = Column(Integer, ForeignKey("users.id"))
-    submitted_at = Column(DateTime, default=datetime.utcnow)
+    submitted_at = Column(DateTime, default=datetime.datetime.utcnow())
